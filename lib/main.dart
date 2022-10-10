@@ -30,6 +30,30 @@ class HomePage extends StatelessWidget {
         backgroundColor: Colors.deepPurple,
         elevation: 10.0,
       ),
+      body: Center(
+        child: Row(
+          children: [
+            Expanded(
+              child: Padding(
+                padding: const EdgeInsets.all(10.0),
+                child: Image.asset(
+                  "assets/images/dice1.png",
+                ),
+              ),
+              flex: 1,
+            ),
+            Expanded(
+              child: Padding(
+                padding: const EdgeInsets.all(10.0),
+                child: Image.asset(
+                  "assets/images/dice4.png",
+                ),
+              ),
+              flex: 1,
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
